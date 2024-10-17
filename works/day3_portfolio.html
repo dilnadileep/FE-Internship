@@ -1,0 +1,242 @@
+<!DOCTYPE html>                  <!--  represent the version of html -->
+ <html lang="en">                 <!-- language - english -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="mim">
+    <meta name="keywords" content="portfolio">
+    <meta name="description" content="A portfolio ">
+    <title>resume</title>
+    <link rel="icon" type="image/png" href="C:\Users\dilna\OneDrive\Desktop\Outfitter\project\images\Fevicon.png">   <!-- icon for webpage -->
+
+    <style>
+        
+        .sub_headding{                 /* sub headdings in the sections */
+            color: rgb(245, 245, 249);
+            font-family:'Poppins', sans-serif;
+
+        }
+        .content{
+            color: rgb(193, 193, 199);
+            font-family:'Poppins', sans-serif;
+
+
+        }
+        .nav_list{
+ 
+            display: inline;              /* to display horizontaly */
+            
+        }
+        a{
+            color: white;          
+            text-decoration: none;    /* remove the underline of text */
+            font-family:'Poppins', sans-serif;
+            font-size: 20px;
+        }
+        .about {
+            display: flex; /* Use flexbox for horizontal alignment */
+            align-items: left; /* Align items vertically in the center */
+        }       
+       
+       
+        .container {
+            display: flex;
+            justify-content: space-between; /* Space between the two sections */
+            padding: 20px;
+        }
+        .headding{                 
+            position: absolute;                  
+            top: 40%;
+            left: 15%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-family:'Poppins', sans-serif;
+            font-size: 50px;
+            
+        }
+        /* Left side styling */
+        .left {
+            flex: 1;                /* Takes up one portion of the space */
+            padding-right: 30px;    /* Adds spacing on the right */
+        }
+
+        
+    </style>
+</head>
+<body style="background-color: rgb(8, 3, 41);">
+    <header>
+        <picture>                    <!-- media tag - used to display image based on the size of display -->
+            <source media="(min-width: 800px)" srcset="https://img.freepik.com/free-vector/futuristic-binary-code-numbers-digital-data-background_1017-25334.jpg">
+            <source media="(min-width: 400px)" srcset="https://img.pikbest.com/wp/202408/program-code-web-development-concept-3d-illustrated-programming-and-coding_9836948.jpg!w700wp">
+            <img src="https://png.pngtree.com/thumb_back/fh260/background/20201104/pngtree-technology-background-binary-computer-code-vector-design-image_458702.jpg" alt="Responsive Image" width="100%" height="600px">
+        </picture> <nav>
+            <ul align="left">
+                <!-- links -->
+                <li class="nav_list"><a href="http://www.linkedin.com/in/dilna-dileep" style="position: absolute; top: 10%; left: 65%; transform: translate(-50%, -50%);">Linkedin&nbsp;&nbsp;&nbsp;</a></li>
+                <li class="nav_list"><a href="https://github.com/dilnadileep" style="position: absolute; top: 10%; left: 75%; transform: translate(-50%, -50%);">GitHub&nbsp;&nbsp;&nbsp;</a></li>
+                <li class="nav_list"><a href="mailto:dilnadileep002@gmail.com" style="position: absolute; top: 10%; left: 85%; transform: translate(-50%, -50%);">Email</a></li>
+            </ul>
+        </nav>
+        <h1 align="center" class="headding">Hi,I'm <mark>Dilna</mark></h1>  <!-- mark use to  hilight the content -->        
+        <p align="center" class="headding" style="position: absolute; top: 50%; left: 15%; transform: translate(-50%, -50%); color: white;font-size: 30px;">MCA Graduate</p>
+       
+
+    </header>         
+        <aside class="about">  <!-- aside udes to define content that is related to the main content but considered separate. -->
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <img  src="https://media.licdn.com/dms/image/v2/D5603AQECmX5BnuCFdQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1723544835137?e=1733961600&v=beta&t=uEHlCN8Otfn-HdV7Rm0krNprYhAO80y3AozBL24cYA8" alt="my image" width="340px" height="350px" style="border-radius: 15px;">
+            <div >
+                <h3 class="sub_headding" style="font-size: 50px;margin-left: 30px">About Me</h3>
+
+                <p class="content" style="margin-left: 30px">Hello! I'm Dilna Dileep, a passionate and dedicated web developer based in India.<br>
+                    With a strong background in software development and a keen eye for detail, I specialize<br>
+                    in creating dynamic and user-friendly web applications. I hold a Master of Computer Applications<br>
+                    (MCA) degree from Amal Jyothi College with a CGPA of 7.92 and have earned Manager's Honors for<br>
+                    Academic Excellence. My expertise spans across various technologies, including Python, C, C++, Java, React, HTML,
+                    CSS, JavaScript/TypeScript,Django, and AWS. I have successfully completed multiple projects, such as a Online
+                    Tailoring System, a digital payment solution for parking, and a real-time vehicle Medical Store management.</p>
+            </div>
+        </aside>
+        <br>
+        
+        <div class="container">
+            <!-- Left side of the page -->
+            <section class="left">
+                <!-- CORE SKILLS -->
+                 <h3 class="sub_headding"> CORE SKILLS</h3>
+                <div>
+                    <p class="content"> Docker | AWS | Python | Django | Flask |<br>
+                     Angular | Linux Administration | RedHat<br>
+                     Administration | ML | HTML | CSS | JSON<br> |
+                     C | Selenium Testing | C++ | Git | SQL |<br>
+                     MongoDB | PHP | Word | PowerPoint |
+                     FIGMA<br> | Bootstrap | Ajax javascript </p>
+                </div>
+            </section>
+
+            <section class="right" style="flex:1;">
+                <!-- OTHER WORKS -->
+                 <h3 class="sub_headding">  OTHER WORKS</h3>
+                 <div>
+                    <p class="content">	-House	Price	Prediction	System<br>
+                    Prediction Using Stacking model of ML algorithms.<br>
+                    HTML	|	Bootstrap	|	Python	|	Flask	|</p>
+                 </div>
+          
+
+            </section>
+            <aside>
+                 <!-- INTERNSHIPS -->
+                <h3 class="sub_headding">INTERNSHIPS</h3>
+                <div>
+                   <p class="content"> Introduction	on	Emerging	Technologies<br>
+                   Artificial Intelligence | Cyber Security <br>
+                   Data Analytics | Front-end Development <br>
+                   Excel & Statistics. <br>
+                   Duration	- 14 Days     Mode - Online</p>
+                </div>
+            </aside>   
+        </div>
+
+        
+    <article>
+        <h2 class="mainh" align="center" style="font-size: 40px;color: white;font-family:'Poppins', sans-serif;">My Services</h2>
+        <video width="640" height="360" controls>           <!-- control used to disply the vedio controls -->       
+            <source src="https://youtu.be/K4TOrB7at0Y" type="video/mp4">
+            <source src="https://lpgexpo.com.sg/wp-content/uploads/2020/06/Sample-Videos-Dummy-Videos-For-Demo-Use.mp4" type="video/mp4">       <!-- source specify the vedio file -->
+
+        </video>
+    </article>    
+
+    <!-- Contact -->
+
+        <section>
+            <h2 class="mainh" align="center" style="font-size: 40px;color: white;font-family:'Poppins', sans-serif;">Contact Me</h2>
+            <div > 
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <iframe src="https://getbootstrap.com/" width="440" height="360" frameborder="0"></iframe> &nbsp;&nbsp; <!-- used to embed another document within the current HTML document -->
+                <iframe src="https://getbootstrap.com/" width="440" height="360" frameborder="0"></iframe>
+        </section>
+ 
+
+        <br><br>
+
+        <div class="container">
+                <!-- Area of Interest -->
+                <section class="left">
+                <details>                     <!-- this provide a  disclosure widget  -->         
+                    <summary class="sub_headding">Area of Interest</summary>
+                    <ol type="I">   <!-- specify the type of listing -->
+                        <li class="content">Web development</li>
+                        <li class="content">Web hosting</li>
+                        <li class="content">Linux</li>
+                        <li class="content"> Administration</li>
+                        <li class="content">Cloud computing</li>
+                    </ol>
+                </details>
+            </section>
+
+            <section class="right" style="flex:1;">
+                <!-- LANGUAGES -->
+                <details>
+                    <summary class="sub_headding">LANGUAGES</summary>
+                    <p class="content">Malayalam</p><meter value="1">100%</meter>      <!-- meter - used to show the scale meassure of my language knowledge -->
+                    <p class="content">English </p><meter value="0.9">90%</meter>
+                    <p class="content">Hindi</p><meter value="0.7">70%</meter>
+
+                </details>
+
+            </section>
+            <aside>
+                <details>
+                    <summary class="sub_headding">SOFT SKILL</summary>
+                    <ul>
+                    <li class="content"> Creativity</li>
+                    <li class="content">Leadership quality</li>
+                    <li class="content">Emotional Intelligence</li>
+                    <li class="content">Problem solving</li>
+                    </ul>
+                </details>
+            </aside>   
+        </div>
+<br><br>
+<h2 class="mainh" style="font-size: 40px;color: white;font-family:'Poppins', sans-serif;">My Music </h2>
+
+<p class="content">Track 1: </p>
+<audio controls>
+  <source src="track1.mp3" type="audio/mpeg">
+</audio>
+
+<p class="content">Track 2: </p>
+<audio controls>
+  <source src="track2.mp3" type="audio/mpeg">
+</audio>
+
+<p class="content">Track 3: </p>
+<audio controls>
+  <source src="track3.mp3" type="audio/mpeg">
+</audio>
+<br><br>
+<h2 class="mainh" style="font-size: 40px;color: white;font-family:'Poppins', sans-serif;">Contact me </h2>
+
+<form action="#" method="post">
+    <label for="name" class="content">Name:</label><br>
+    <input type="text"  name="name" placeholder="Enter your name" required><br><br>
+
+    <label for="email" class="content">Email:</label><br>
+    <input type="email"  name="email" placeholder="Enter your email" required><br><br>
+
+    <label for="message" class="content">Message:</label><br>
+    <textarea id="message" name="message" rows="4" cols="50" placeholder="Type message here," required></textarea><br><br>
+
+    <!-- Submit Button -->
+    <input type="submit" value="Submit">
+          
+   <footer>
+        <div align="center">
+            <p class="content">copyright &copy; Dilna Dileep</p>
+        </div>
+    </footer>
+    
+</body>
+</html>

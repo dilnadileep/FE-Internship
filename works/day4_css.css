@@ -1,0 +1,108 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+#first_div{
+    display:flex;
+    flex-direction: column;          /* display the child column wise */
+    align-items: center;           /* Center the child elements horizontally */
+    padding-top:15px ;         /* leave some space from top */
+    padding-bottom: 20px;
+    background-color: rgb(108, 185, 30);
+    
+}
+
+.child{
+    color:  rgb(196, 241, 144);
+}
+@media (max-width: 600px) {
+    body {
+        background-color: lightblue; /* Change background color for smaller screens */
+        color: darkblue;             /* Change text color for smaller screens */
+    }
+}
+
+#second_div{
+    display:flex;
+    flex-direction: column;          /* display the child column wise */
+    align-items: center;           /* Center the child elements horizontally */
+    padding-top:40px ;
+    color: gray;
+
+}
+.child2{
+    padding-left:40px ;
+    padding-right: 40px;
+}
+
+#third_div{
+    display:flex;
+    flex-direction: row;          
+    padding-left:20px ;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    justify-content: space-between;
+}
+.child3{
+    width: 300px;
+
+}
+.sub_c{
+    color:blue;
+    font-size: 120%;
+}
+.p::before{
+    content:"Efficiently Unleash";
+    font-size: 120%;
+    color: blue;
+    
+}
+
+.fourth_div{
+    display:flex;
+    flex-direction: row;          
+    padding-left:20px ;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: rgb(222, 189, 25); 
+     
+}
+.p1::before{
+    content:"Efficiently Unleash";         /* display this text before the content in p1  */
+    font-size: 120%; 
+    color: black;
+    
+}
+.img {
+    border-radius: 50%;           /* Make the image circular */
+    object-fit: cover;            /* Ensure the image covers the area without stretching */
+    border: 2px solid #ccc;       /* Optional: border around the image */
+}
+
+.but:hover{
+    background-color: blue;    /* while mouse move to the button it turns blue */
+}
+
+@media (max-width:600px){       /* while screen size below 600px ,the size of image will change */
+    .img{
+    width:50px;
+    height:50px;
+    }
+
+}
+.foot1{
+        display:flex;
+        flex-direction:row;         
+        justify-content: center;
+        padding-top:40px ;
+        color:blue;
+        
+        
+}
+.para:nth-last-child(2)::before {    /* a pipe symbol display before each item */
+    content:" | ";              
+    margin-left: 5px;
+}
+.para:last-child::before{
+    content:" | ";
+    margin-left: 5px;
+}

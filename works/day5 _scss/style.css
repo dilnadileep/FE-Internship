@@ -1,0 +1,148 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+#main {
+  color: blue;
+}
+
+body {
+  background-color: aliceblue;
+}
+
+/* nesting */
+nav ul {
+  display: flex;
+  list-style-type: none; /* Remove bullet points */
+  padding: 0;
+}
+nav li {
+  margin-right: 20px; /* Spacing between list items */
+}
+
+/* mixins */
+.first_div {
+  background-image: url("https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?cs=srgb&dl=pexels-padrinan-255379.jpg&fm=jpg");
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* operators  */
+.main_h {
+  padding-top: 50px;
+  padding-left: 20px;
+  color: #1a1a1a;
+}
+
+#m_button, #sec_button {
+  border-radius: 10px;
+  padding: 10px;
+}
+
+/* extending the m_button styles to the below button */
+#m_button:hover,
+#sec_button:hover {
+  background-color: blue;
+}
+
+.sec1_div, .sec3_div, .sec1_2div {
+  display: flex;
+  flex-direction: row;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+/* for loop,here we all the child for div above using forloop and giving same design */
+.child1 {
+  padding-top: 20px;
+  padding-left: 10px;
+  width: 300px;
+  justify-content: space-around;
+}
+
+.child2 {
+  padding-top: 20px;
+  padding-left: 10px;
+  width: 300px;
+  justify-content: space-around;
+}
+
+.child3 {
+  padding-top: 20px;
+  padding-left: 10px;
+  width: 300px;
+  justify-content: space-around;
+}
+
+.child4 {
+  padding-top: 20px;
+  padding-left: 10px;
+  width: 300px;
+  justify-content: space-around;
+}
+
+.sec1_2div {
+  padding-left: 80px;
+}
+
+/* While loop for styling the child of sec1_div */
+.child6 {
+  padding-left: 50px;
+  justify-content: space-between;
+}
+
+.child5 {
+  padding-left: 50px;
+  justify-content: space-between;
+}
+
+h3 {
+  color: blue;
+}
+
+uol {
+  list-style-type: armenian;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.rectangle {
+  width: 30%;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* forward */
+.rectangle-image {
+  width: 100%;
+  height: auto;
+}
+
+.content {
+  padding: 15px;
+}
+
+.sec3_div {
+  background-color: rgb(5, 5, 46);
+  color: white;
+}
+
+.p-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=style.css.map */

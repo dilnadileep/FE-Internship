@@ -1,0 +1,18 @@
+
+
+.custom-btn {
+    border: none;
+        padding: 10px 20px;
+        border-radius: 5px; 
+        cursor: pointer;
+    &--green {
+        background-color: $color-green;
+        color: white; 
+    }
+    &--blank{
+        color: $color-green; 
+        background-color: white;
+
+
+    }
+}
