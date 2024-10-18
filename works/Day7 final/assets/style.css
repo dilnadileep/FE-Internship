@@ -8,9 +8,30 @@
   background-color: #4CAF4F;
   color: white;
 }
+.custom-btn--green:hover {
+  background-color: white;
+  color: #4CAF4F;
+}
 .custom-btn--blank {
   color: #4CAF4F;
   background-color: white;
+}
+.custom-btn--blank:hover {
+  background-color: #3d8b3f;
+  color: #f0f0f0;
+}
+
+* {
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  width: 1440px;
+  height: 4376px;
+}
+
+span {
+  color: #4CAF4F;
 }
 
 .mainh {
@@ -170,30 +191,91 @@
 
 .final_sec {
   background-color: #F5F7FA;
+  text-align: center;
+  padding: 2rem 1rem;
 }
 .final_sec__headding {
   color: #263238;
   font-size: 3.8rem;
+  line-height: 1.2;
+}
+.final_sec button {
+  margin-top: 1.5rem;
+}
+@media (max-width: 768px) {
+  .final_sec__headding {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 576px) {
+  .final_sec__headding {
+    font-size: 2rem;
+  }
 }
 
 footer {
   background-color: #263238;
+  padding: 2rem 0;
 }
-
-.final_row {
+footer .final_row {
   color: #fff;
   text-align: left;
 }
-.final_row__text {
+footer .final_row__text {
   color: #F5F7FA;
   text-align: left;
+  margin-bottom: 0.5rem;
 }
-.final_row__f_input {
+footer .final_row__f_input {
   background-color: #717171;
+}
+@media (max-width: 768px) {
+  footer .final_row {
+    text-align: center;
+  }
+}
+@media (max-width: 576px) {
+  footer .final_row {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+}
+footer .row {
+  margin: 0;
+  padding: 1rem 0;
+}
+@media (max-width: 768px) {
+  footer .row {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+footer .row .col-5,
+footer .row .col-2,
+footer .row .col-3 {
+  margin-bottom: 1rem;
+}
+@media (max-width: 768px) {
+  footer .row .col-5 {
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  footer .row .col-2 {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  footer .row .col-3 {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .input-container {
   position: relative;
+  margin-top: 1rem;
 }
 .input-container input {
   width: 100%;
@@ -222,16 +304,20 @@ footer {
   height: 20px;
   cursor: pointer;
 }
-
-* {
-  font-family: "Inter", sans-serif;
+@media (max-width: 768px) {
+  .input-container input {
+    padding: 8px 35px 8px 8px;
+  }
+  .input-container img {
+    height: 18px;
+  }
 }
-
-body {
-  width: 1440px;
-  height: 4376px;
-}
-
-span {
-  color: #4CAF4F;
+@media (max-width: 576px) {
+  .input-container input {
+    padding: 7px 30px 7px 7px;
+    font-size: 12px;
+  }
+  .input-container img {
+    height: 16px;
+  }
 }/*# sourceMappingURL=style.css.map */
