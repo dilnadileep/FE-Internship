@@ -1,70 +1,72 @@
-.mainh{
-    max-width:49px;
-    &--col{
-        color: $color-green; 
 
-    }
+
+.sec_demo {
+  text-align: center;   
+  margin-bottom: 30px; 
+  margin-top: 30px; 
+
+  &__heading {
+      color: $color_gre;
+      font-size: 40px; 
+      font-weight: bold;
+  }
+
+  &__subtext {
+      font-size: 16px; 
+      color: $sec_grey; 
+      margin: 0 auto;  
+      text-align: center;
+      width: 90%;  
+
+      @media (max-width: 768px) {
+          width: 95%;  
+          font-size: 14px;  
+      }
+
+      @media (max-width: 576px) {
+          width: 100%; 
+          font-size: 12px; 
+      }
+  }
 }
-.demo{
-    background-color:$back-color;
 
+
+.sec {
+  text-align: center;   
+  margin-bottom: 30px; 
+  margin-top: 30px; 
+
+  &__heading {
+      color: $color_gre;
+      font-size: 40px; 
+      font-weight: bold;
+
+      @media (max-width: 768px) {
+          font-size: 32px;  
+      }
+
+      @media (max-width: 576px) {
+          font-size: 28px;  
+      }
+  }
+
+  &__subtext {
+      font-size: 16px; 
+      color: $sec_grey; 
+      width: 90%; 
+
+      @media (max-width: 768px) {
+          font-size: 14px;  
+          width: 95%; 
+      }
+
+      @media (max-width: 576px) {
+          font-size: 12px;  
+          width: 100%;  
+      }
+  }
 }
-.main-section {
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center; /* Align items vertically */
-    padding: 50px 100px; 
-    max-width: 1200px; 
-    margin: 0 auto;
 
-    &__content {
-        max-width: 60%; 
-        
-    }
-
-    &__heading {
-        margin-top: 20%;
-        font-size: 49px; 
-        line-height: 1.2; 
-        color:$color_gre; 
-        font-weight: bold;
-        white-space: nowrap; /* Prevent line breaks */
-
-        
-
-    }
-
-    &__subtext {
-        font-size: 16px; 
-        color:$sec_grey; 
-        margin-top: 10px;
-    }
-
-    &__image {
-        max-width: 49%; 
-
-        img {
-            width: 100%; 
-        }
-    }
-}
- 
-.sec{
-    text-align: center;   
-    margin-bottom: 30px; 
-    margin-top: 30px; 
-
-    &__heading {
-        color:$color_gre;
-        font-size: 40px; 
-
-    }
-    &__subtext {
-            font-size: 16px; 
-            color:$sec_grey; 
-            width:100%;
-        }
-    }
 .my-card{
     color:$color_gre;
 }
@@ -76,47 +78,75 @@
 }
 .sec_head{
     color:$color_gre;
+    font-weight: bold;
+
 }
+
 .center_sec {
-    
-    .stats-section {
-        .stats-row {
-            display: flex;
-            align-items: right;
-            margin-left: 200px; 
-            
-        }
+  .stats-section {
+      .stats-row {
+          display: flex;
+          align-items: center;  
+          justify-content: center; 
+          margin-left: 0; 
 
-        .count {
-            margin-left: 10px; 
-            font-size: 1.5rem; 
-            color:$color_gre;
-        }
+          img {
+              margin-right: 10px; 
+          }
+      }
 
-        .row_nm {
-            font-size: 1rem;
-            margin-left: 240px;
-            color:$sec_grey;
-        }
-    }
+      .count {
+          font-size: 1.5rem;
+          color: $color_gre;
+          font-weight: bold;
 
-    // Make sure each column occupies 1/3 of the row on larger screens
-    .col-md-4 {
-        flex: 0 0 33.3333%;
-        max-width: 33.3333%;
-    }
+      }
 
-    // Responsiveness: adjust font sizes for smaller screens
-    @media (max-width: 768px) {
-        .count {
-            font-size: 1.2rem;
-        }
+      .row_nm {
+          font-size: 1rem;
+          text-align: center;
+          color: $sec_grey;
+          margin-top: 10px;
+      }
+  }
 
-        .row_nm {
-            font-size: 0.9rem;
-        }
-    }
+  .col-md-4 {
+      flex: 0 0 33.3333%;
+      max-width: 33.3333%;
+  }
+
+  @media (max-width: 768px) {
+      .stats-row {
+          flex-direction: column; 
+          align-items: center; 
+      }
+
+      .count {
+          font-size: 1.2rem;  
+      }
+
+      .row_nm {
+          font-size: 0.9rem; 
+          text-align: center; 
+      }
+  }
+
+  @media (max-width: 576px) {
+      .stats-row {
+          margin: 0 auto; 
+          padding: 10px; 
+      }
+
+      .count {
+          font-size: 1rem; 
+      }
+
+      .row_nm {
+          font-size: 0.8rem; 
+      }
+  }
 }
+
 
 .sec_head2{
     color:$color_gre;
@@ -125,7 +155,7 @@
 .logos-row {
     margin-top: 20px;
     .logo-img {
-        max-width: 60px; 
+        max-width: 50px; 
         padding: 0 10px; 
     }
 
@@ -180,12 +210,13 @@
   .final_sec {
     background-color: $back-color;
     text-align: center;
-    padding: 2rem 1rem;
+    padding: 1rem 1rem;
     
     &__headding {
       color: $final_head;
       font-size: 3.8rem;
       line-height: 1.2;
+      font-weight: bold;
     }
   
     button {
