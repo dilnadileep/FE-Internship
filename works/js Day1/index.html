@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Marking System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h2 class="head1">Student Marking System</h2>
+
+  <div class="card-container">
+    <div class="card left-card">
+        <div class="card-body">
+          <div class="card-section left-section">
+            <form id="marks-form">
+                <div class="mb-3 row">
+                    <label for="studname" class="col-sm-2 col-form-label">Student Name</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" id="studname" placeholder="Enter your name">
+                    </div>
+    
+                    <label for="maths" class="col-sm-2 col-form-label">Maths</label>
+                    <div class="col-sm-10">
+                      <input type="number" class="form-control" id="maths" placeholder="Enter your mark">
+                    </div>
+    
+                    <label for="science" class="col-sm-2 col-form-label">Science</label>
+                    <div class="col-sm-10">
+                      <input type="number" class="form-control" id="science" placeholder="Enter your mark">
+                    </div>
+    
+                    <label for="english" class="col-sm-2 col-form-label">English</label>
+                    <div class="col-sm-10">
+                      <input type="number" class="form-control" id="english" placeholder="Enter your mark">
+                    </div>
+                </div>
+                <button type="button" onclick="total_calculation()">Calculate</button>
+            </form>
+          </div>
+        </div>
+    </div>
+
+    <div class="card right-card">
+        <div class="card-body">
+          <div class="card-section right-section">
+            <h3 align="center" class="headding">Calculations</h3>
+            <p class="mark">Total Marks: <span id="total-marks">0</span></p>
+            <p class="mark">Average Marks: <span id="average-marks">0</span></p>
+            <p class="mark">Grade: <span id="grade">N/A</span></p>
+          </div>
+        </div>
+    </div>
+  </div>
+    
+  <script src="index.js"></script>
+</body>
+</html>
