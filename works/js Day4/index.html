@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        #taskList li {
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #f4f1f1;
+            list-style-type: none;
+        }
+        .completed {
+            text-decoration: line-through;
+            color: #489bf3;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="mainhead">To-Do List</h1>
+<div id="maindiv">
+    <ul id="taskList"></ul>
+
+    <input type="text" id="taskInput" placeholder="Enter a new task" /><br>
+    <button id="addTaskBtn">Add Task</button>
+    <button id="removeTaskBtn">Remove Last Task</button>
+    <button id="completeTaskBtn">Mark First Task as Completed</button><br><br>
+</div>
+    <script src="sample.js"></script>
+
+</body>
+</html>

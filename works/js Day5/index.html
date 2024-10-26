@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Webpage</title>
+    <style>
+        *{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: #130543;
+            /* color: ; */
+
+        }
+        body{
+            background-color:white;
+        }
+        h1{
+            text-align: center;
+        }
+        .hover-box {
+            width:  100%;
+            height: 100%;
+            background-color: #faf3e0;
+            margin: auto;
+            padding: 2%;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin: 3px 0;
+            padding: 5px;
+            background-color: #f2f2f2;
+            cursor: pointer;
+        }
+        button {
+            padding: 8px 12px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        p{
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Events and Event Handling</h1>
+<div id="firstdiv">
+    button for handling click event:<button id="clickButton">Click Me!</button><br><br>
+input field to handle keypress events:<input type="text" id="inputField" placeholder="Type something...">
+
+</div>
+<h2 style="text-align: center;">Interactive List of Items</h2>
+    <ul id="itemList">
+        <li >Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+    </ul>
+    <h2 style="text-align: center;">Hover to See the Color Change</h2>
+
+    <div class="hover-box" id="colorBox">
+        <p>Lorem ipsum dolor sit amet, consectetur 
+            adipiscing elit. Nullam vulputate justo
+             ut sem cursus, nec pulvinar elit auctor.
+              Proin sagittis, metus ac dignissim tincidunt,
+               lectus risus fermentum neque, ut hendrerit
+                lectus nunc ut erat. Vestibulum non est 
+                quis nunc sollicitudin condimentum a a
+                 mauris. Fusce rhoncus lorem vel justo
+                  vehicula, nec dictum justo convallis.
+                   Sed nec lectus ut elit faucibus dapibus
+                    ac eget eros. Curabitur tempor orci at 
+                    arcu ultricies sollicitudin. Suspendisse 
+                    potenti. Praesent interdum eros eget nisl 
+                    fermentum, eget tincidunt odio pellentesque.</p>
+    </div>
+    <script src="sample.js"></script>
+</body>
+</html>
