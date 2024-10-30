@@ -4,13 +4,13 @@ body {
   align-items: center;
   height: 100vh;
   font-family: Arial, sans-serif;
-  background-color: #80a8f7;
+  background-color: #f2f4f8;
 }
 
 .calculator {
   width: 300px;
   padding: 20px;
-  background-color: #000001;
+  background-color: #40415d;
   border-radius: 10px;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
 }
@@ -18,7 +18,7 @@ body {
 .display {
   display: flex;
   flex-direction: column;
-  background: #939394;
+  background: #50506d;
   padding: 10px;
   border-radius: 5px;
 }
@@ -52,8 +52,13 @@ button {
   border-radius: 5px;
   border: none;
   color: #ffffff;
-  background-color: #86868a;
+  background-color: #555576;
   cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+button:hover {
+  background-color: #6b6b8f; /* Slightly lighter color on hover */
 }
 
 button[data-type="operator"],
@@ -61,5 +66,14 @@ button[data-type="equals"],
 button[data-type="clear"],
 button[data-type="backspace"],
 button[data-type="function"] {
-  background-color: #58545a;
+  background-color: #5b5b9b;
 }
+
+button[data-type="operator"]:hover,
+button[data-type="equals"]:hover,
+button[data-type="clear"]:hover,
+button[data-type="backspace"]:hover,
+button[data-type="function"]:hover {
+  background-color: #7b7bad; /* Lightened color for special buttons on hover */
+}
+
