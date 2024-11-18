@@ -1,0 +1,48 @@
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    background-color: #fff;
+  
+    &.completed {
+      background-color: #e8f5e9;
+      text-decoration: line-through;
+      color: #757575;
+  
+      .actions button:first-child {
+        background-color: #ccc;
+        cursor: not-allowed;
+      }
+    }
+  
+    .actions {
+      display: flex;
+      gap: 10px;
+  
+      button {
+        padding: 5px 10px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+  
+        &:first-child {
+          background-color: #6e7ce1;
+          color: #fff;
+        }
+  
+        &:last-child {
+          background-color: #8a40a3;
+          color: #fff;
+        }
+  
+        &:hover {
+          opacity: 0.9;
+        }
+      }
+    }
+  }
+  
