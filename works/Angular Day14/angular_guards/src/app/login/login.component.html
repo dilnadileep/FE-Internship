@@ -1,0 +1,39 @@
+
+<div class="login-container">
+  <div class="credentials-section">
+    <h3>Testing Credentials</h3>
+    <table class="credentials-table">
+      <thead>
+        <tr>
+          <th>Role</th>
+          <th>Email</th>
+          <th>Password</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>User</td>
+          <td>user&#64;example.com</td>
+          <td>user</td>
+        </tr>
+        <tr>
+          <td>Admin</td>
+          <td>admin&#64;example.com</td>
+          <td>admin</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <h2 class="login-header">Login</h2>
+  <form class="login-form" (ngSubmit)="onLogin()">
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" [(ngModel)]="email" name="email" class="form-input" required/>
+    </div>
+    <div class="form-group">
+      <label for="password">Password:</label>
+      <input type="password" id="password" [(ngModel)]="password" name="password" class="form-input" required />
+    </div>
+    <button type="submit" class="btn btn-primary">Login</button>
+  </form>
+</div>
